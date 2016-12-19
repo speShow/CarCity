@@ -1,5 +1,3 @@
-// JavaScript Document
-
 //.bottom_bg
 var divBg=document.createElement("div");
 divBg.className="bottom_bg";
@@ -27,10 +25,9 @@ divZn.className="divDg";
 divAbout.className="divDg";
 divContact.className="divDg";
 
-
-var dgcity=getA("城市大全","");
-var dgbrands=getA("品牌大全","");
-var dgcars=getA("车系大全","");
+var dgcity=getA("城市大全","area.html");
+var dgbrands=getA("品牌大全","brands.html");
+var dgcars=getA("车系大全","series.html");
 var dgSettings=[
 	{
 		content:dgcity
