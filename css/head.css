@@ -1,0 +1,82 @@
+/* CSS Document */
+
+/*顶部*/
+.topNav{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:20px 0;
+	width:100%;
+	height:36px;
+	background-color:rgb(255,255,255);
+	border-top:4px solid rgb(255,88,26);
+	border-bottom:1px solid rgb(220,220,220);
+}
+.topNav a{color:rgb(51,51,51);}
+.topNav .logo{
+	float:left;
+	margin:0 18px 0 6px;
+	width:76px;
+	height:39px;
+	background-image:url(../images/logo.png);
+}
+.area{
+	float:left;
+	margin:3px 50px 3px 0;
+	width:86px;
+	height:28px;
+	border:1px solid rgb(237,237,237);
+	border-radius:2px;
+}
+.area span{
+	display:block;
+	padding-left:23px;
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	color:rgb(102,102,102);
+	cursor:pointer;
+}
+.area .fixedBox{
+	margin:3px 0 0 -1px;
+	width:360px;
+	height:360px;
+	border:1px solid rgb(255,88,26);
+	display:none;
+}
+.topNav .anchor{
+	float:left;
+	margin-right:34px;
+	font-size:14px;
+	line-height:36px;
+}
+.topNav a.anchor:hover,.topNav a.sign:hover{color:rgb(255,88,26);}
+.topNav .cur{color:rgb(255,88,26);}
+.topNav div.anchor{display:inline;}
+.topNav input{
+	float:left;
+	margin-right:65px;
+	padding:0 8px;
+	width:200px;
+	height:28px;
+	border:2px solid rgb(230,230,230);
+	line-height:28px;
+	outline:none;
+}
+.topNav input:focus{border-color:rgb(204,204,204);}
+.topNav .sign{
+	float:left;
+	margin-right:15px;
+	font-size:12px;
+	line-height:36px;
+}
+
+.topNav .tel{
+	float:right;
+	width:154px;
+	height:36px;
+}
+.topNav.fixed{
+	position:fixed;
+	z-index:2;
+}

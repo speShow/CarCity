@@ -1,0 +1,119 @@
+/* CSS Document */
+
+/*底部*/
+.bottom_bg{background-color:rgb(31,31,31);}
+.bottom{
+	height:407px;
+	width:1200px;
+	margin:0 auto;
+}
+.bottom a{color:rgb(102,102,102);}
+.bottom_catalog span{
+	font-size:16px;
+	font-weight:bold;
+	color:rgb(255,255,255);
+	}
+.bottom_catalog .divDg{
+	float:left;
+	margin:34px 50px 0 0;
+	width:140px;
+}
+.divDg ul{
+	margin-top:20px;
+	overflow:hidden;
+}
+.divDg ul li{line-height:24px;}
+.divDg ul li a:hover,.bottom p.other a:hover{
+	text-decoration:underline;
+	color:rgb(102,102,102);
+	}
+.bottom p{
+	margin-top:27px;
+	color:rgb(102,102,102);
+}
+.bottom p.city{line-height:24px;}
+.bottom p.city a{margin-left: 12px;}
+.bottom p.city a:hover{color:rgb(255,88,26);}
+.bottom p.other{
+	border-top:1px solid rgb(102,102,102);
+	border-bottom:1px solid rgb(102,102,102);
+	padding:10px 0;
+	line-height:20px;
+}
+.bottom p.other a{margin-right:25px;}
+.bottom p.copy{margin-top:10px;}
+
+/*侧边栏*/
+.fixedNav{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:284px;
+	z-index:1;
+	transition:width .25s;
+}
+.fixedNav:hover{width:80px;}
+.fixedNav:hover .anchor span{width:auto;}
+.fixedNav div{
+	height:34px;
+	overflow:hidden;
+	background-color:rgb(255,88,26);
+	text-indent:14px;
+	font-size:14px;
+	line-height:34px;
+	color:rgb(255,255,255);
+}
+.fixedNav .anchor{
+	float:left;
+	width:100%;
+	height:54px;
+	overflow:hidden;
+	background-color:rgb(247,247,247);
+	border-bottom:1px solid rgb(230,230,230);
+	border-left:1px solid rgb(230,230,230);
+	font-size:12px;
+	color:rgb(102,102,102);
+}
+.fixedNav .anchor:hover{
+	background-color:rgb(255,255,255);
+	cursor:pointer;
+	}
+.fixedNav .anchor .icon{
+	margin:10px 0 8px 18px;
+	display:block;
+	width:18px;
+	height:16px;
+}
+.fixedNav .anchor .favor{background-position:0 0;}
+.fixedNav .anchor .favor:hover{background-position:0 -21px;}
+.fixedNav .anchor .consult{background:url(../images/icon3.png) no-repeat;}
+.fixedNav .anchor .sell{background-position:-40px -42px;}
+.fixedNav .anchor .sell:hover{background-position:-40px -60px;}
+.fixedNav .anchor .feedback{background-position:-80px 0;}
+.fixedNav .anchor .feedback:hover{background-position:-80px -21px;}
+.fixedNav .anchor:hover .favor{background-position:0 -21px;}
+.fixedNav .anchor:hover .sell{background-position:-40px -60px;}
+.fixedNav .anchor:hover .feedback{background-position:-80px -21px;}
+.fixedNav .anchor span{
+	margin-left:16px;
+	display:block;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+.top{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:25px;
+	background-color:rgb(51,51,51);
+	text-align:center;
+	font-size:12px;
+	line-height:25px;
+	color:rgb(255,255,255);
+	cursor:pointer;
+	z-index:1;
+	display:none;
+}

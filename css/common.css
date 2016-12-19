@@ -1,0 +1,14 @@
+/* CSS Document */
+
+body{padding-top:80px;}
+.w1200{
+	width:1200px;
+	margin:0 auto;
+}
+.w1280{
+	width:1280px;
+	margin:0 auto;
+}
+.icon{background:url(../images/icon.png);}
+.icon2{background:url(../images/icon2.png);}
+em,i{font-style:normal;}

@@ -1,0 +1,141 @@
+/* CSS Document */
+
+/*顶部：head.css*/
+
+/*轮播图*/
+.banner{
+	position:relative;
+	height:460px;
+}
+.banner:hover i{
+	opacity:.5;
+}
+.banner a{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:100% 100%;
+}
+.banner i{
+	position:absolute;
+	top:208px;
+	width:25px;
+	height:44px;
+	z-index:1;
+	opacity:0;
+	transition:opacity .5s;
+}
+.banner i:hover{
+	opacity:1;
+}
+.banner .current{z-index:1;}
+.banner .previous{
+	left:66px;
+	background-position:0 -37px;
+}
+.banner .next{
+	right:66px;
+	background-position:-26px -37px;
+}
+/*车类导航*/
+.nav{
+	height:139px;
+	border:1px solid rgb(217,217,217);
+}
+/*主体*/
+.main{
+	padding-top:90px;
+	overflow:hidden;
+	background-color:rgb(242,242,242);
+}
+.main h1{
+	text-align:center;
+	font-size:32px;
+	font-weight:normal;
+	color:rgb(51,51,51);
+}
+.main p{color:rgb(153,153,153);}
+.main>p,.product>p{
+	font-size: 16px;
+	text-align:center;
+}
+.main>p{margin:20px 0 42px;}
+.main .container{width:1220px;}
+.main .container a{
+	float:left;
+	margin:40px 30px 0 10px;
+	padding-left:285px;
+	width:285px;
+	height:240px;
+	background-color:rgb(255,255,255);
+	background-repeat:no-repeat;
+	text-align:center;
+}
+.main .container a:hover{
+	box-shadow:0 4px 8px 0 rgb(182,182,182);
+}
+.main .container a:hover h2{color:rgb(255,88,26);}
+.main .container a:hover img{margin-left:-10px;}
+.main .container a h2{
+	margin-top:34px;
+	font-weight:normal;
+	font-size:20px;
+	color:rgb(68,68,68);
+}
+.main .container a p{
+	margin-top:16px;
+	font-size:14px;
+}
+.main .container a img{
+	margin-top:45px;
+	width:160px;
+	height:105px;
+	transition:margin-left .25s;
+}
+.main .product{
+	margin-top:80px;
+	padding-top:82px;
+	height:390px;
+	background-color:rgb(255,255,255);
+}
+.product>p{margin: 20px 0 66px;}
+.product .app{
+	position: relative;
+	float: left;
+	padding: 14px  32px;
+	width: 328px;
+	height: 154px;
+	border-left: 1px solid rgb(230,230,230);
+}
+.product .app.noborder{border: none;}
+.product .app .img{
+	margin-bottom: 14px;
+	height: 64px;
+}
+.product .app .img img{float: left}
+.product .app .img .title{
+	margin-left: 21px;
+	float: left;
+}
+.product .app .img h2{
+	padding-top: 6px;
+	font-weight:normal;
+	font-size:20px;
+	color:rgb(68,68,68);
+}
+.product .app .img p{
+	margin-top: 16px;
+	font-size: 14px;
+	color: rgb(51,51,51);
+}
+.product .app>p{line-height: 16px;}
+.product .app a{
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	font-size: 14px;
+	color: rgb(255,88,26);
+}
+
+/*底部：foot.css*//
