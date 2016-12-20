@@ -1,0 +1,19 @@
+.main h1{
+	margin: 30px 0 40px;
+	font-size: 20px;
+	color: #333;
+}
+.main .city-wrap > div{
+	margin-bottom: 24px;
+}
+.main .city-wrap .hot-city h2,.main .city-wrap .hot-city h2 a{
+	margin-bottom: 14px;
+	font-size: 16px;
+	color: #333;
+}
+.main .city-wrap .hot-city a{
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.main .city-wrap .hot-city a:hover{color: #ff571a;}

@@ -25,3 +25,7 @@ Array.prototype.forEach = [].forEach || function(callback){
 		callback(this[a], a++, this);
 	}
 };
+
+function dc(tagName){
+	return document.createElement(tagName);
+}
