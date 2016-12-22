@@ -3,17 +3,17 @@
 	font-size: 20px;
 	color: #333;
 }
-.main .city-wrap > div{
+.main .city-wrap div{
 	margin-bottom: 24px;
 }
-.main .city-wrap .hot-city h2,.main .city-wrap .hot-city h2 a{
+.hot-city h3,.hot-city h3 a,.city-item h3,.city-item h3 a{
 	margin-bottom: 14px;
 	font-size: 16px;
 	color: #333;
 }
-.main .city-wrap .hot-city a{
+.hot-city a,.city-item a{
 	margin-right: 10px;
 	font-size: 14px;
 	color: #666;
 }
-.main .city-wrap .hot-city a:hover{color: #ff571a;}
+.hot-city a:hover,.city-item a:hover{color: #ff571a;}

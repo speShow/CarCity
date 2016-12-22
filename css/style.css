@@ -1,5 +1,6 @@
 /* CSS Document */
-body,p,ul,li,h1,h2,h3,h4,h5,h6{padding:0;margin:0;font-family:Microsoft Yahei;line-height:1;font-size:12px;}
+body,p,ul,li,h1,h2,h3,h4,h5,h6{padding:0;margin:0;font-family:Microsoft Yahei;line-height:1;}
+body{font-size: 12px;}
 img{border:none;}
 ul,li{list-style:none;}
 a{text-decoration:none;}

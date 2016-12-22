@@ -9,6 +9,19 @@ body{padding-top:80px;}
 	width:1280px;
 	margin:0 auto;
 }
+.wrap{
+	margin: 0 auto;
+	padding: 70px 0 50px;
+	width: 1000px;
+	font-size: 14px;
+	color: #444;
+}
+.wrap h1{
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 26px;
+}
+.wrap p.title{color: #ff8c00;}
 .icon{background:url(../images/icon.png);}
 .icon2{background:url(../images/icon2.png);}
 em,i{font-style:normal;}

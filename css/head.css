@@ -47,21 +47,51 @@
 	background-image: url(../images/arrow.png);
 }
 .area .fixedBox{
-	margin:3px 0 0 -1px;
+	padding:3px 0 0 -1px;
 	width:360px;
 	height:360px;
+	background-color: rgb(255,255,255);
 	border:1px solid rgb(255,88,26);
 	display:none;
 }
+.area:hover .fixedBox{display: block;}
 .topNav .anchor{
 	float:left;
 	margin-right:34px;
 	font-size:14px;
 	line-height:36px;
 }
-.topNav a.anchor:hover,.topNav a.sign:hover{color:rgb(255,88,26);}
+.topNav a.anchor:hover,.topNav a.sign:hover,.topNav div.anchor .shangjia a:hover{color:rgb(255,88,26);}
 .topNav .cur{color:rgb(255,88,26);}
-.topNav div.anchor{display:inline;}
+.topNav div.anchor{
+	position: relative;
+	display:inline;
+}
+.topNav div.anchor .shangjia{
+	position: absolute;
+	top: -5px;
+	left: -15px;
+	padding: 3px 0 0 13px;
+	width: 69px;
+	height: 113px;
+	background-color: rgb(255,255,255);
+	border: 2px solid rgb(255,88,26);
+	box-shadow: 0 0 10px rgb(182,182,182);
+	-o-box-shadow: 0 0 10px rgb(182,182,182);
+	-ms-box-shadow: 0 0 10px rgb(182,182,182);
+	-moz-box-shadow: 0 0 10px rgb(182,182,182);
+	-webkit-box-shadow: 0 0 10px rgb(182,182,182);
+	display: none;
+}
+.topNav div.anchor:hover .shangjia{display: block;}
+.topNav div.anchor .shangjia span{
+	margin-bottom: 20px;
+	display: block;
+}
+.topNav div.anchor .shangjia a{
+	line-height: 24px;
+	display: block;
+}
 .topNav input{
 	float:left;
 	margin-right:65px;

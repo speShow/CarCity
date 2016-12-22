@@ -1,0 +1,6 @@
+.wrap p{
+	line-height: 24px;
+	letter-spacing: .5px;
+}
+.wrap p.describe{margin: 10px 0;}
+.wrap img{margin-bottom: 14px;}

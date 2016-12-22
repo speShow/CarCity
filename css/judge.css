@@ -1,0 +1,8 @@
+.wrap p{
+	margin-top: 20px;
+}
+.wrap p.title{
+	margin-top: 60px;
+	font-size: 16px;
+}
+.wrap img{margin-top: 14px;}
