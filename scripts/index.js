@@ -2,7 +2,7 @@
 
 //车展览
 function createBox(option){
-	var a=document.createElement("a");
+	var a=dc("a");
 	a.href=option.href;
 	a.style.backgroundImage="url("+option.bigUrl+")";
 	a.innerHTML="<h2>"+option.title+"</h2>"
@@ -62,7 +62,7 @@ document.getElementById("exhibition").appendChild(exhibitionFragment);
 
 //产品app
 function createApp(option,index){
-	var divApp=document.createElement("div");
+	var divApp=dc("div");
 	divApp.className="app"+(index===0?" noborder":"");
 	divApp.innerHTML=[
 		"<div class=\"img\">",

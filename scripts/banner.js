@@ -8,7 +8,7 @@ function createBanner(option){
 	var timer;
 	//创建轮播图片
 	function createImage(option){
-		var a=document.createElement("a");
+		var a=dc("a");
 		a.href=option.href;
 		a.title=option.title;
 		a.style.backgroundImage="url("+option.url+")";
@@ -25,7 +25,7 @@ function createBanner(option){
 	}
 	//创建左右按钮
 	function createButton(className){
-		var i=document.createElement("i");
+		var i=dc("i");
 		i.className="icon "+className;
 		i.onclick=function(){
 			clearInterval(timer);

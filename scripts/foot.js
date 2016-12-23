@@ -1,24 +1,24 @@
 //.bottom_bg
-var divBg=document.createElement("div");
+var divBg=dc("div");
 divBg.className="bottom_bg";
 //.bottom
-var div=document.createElement("div");
+var div=dc("div");
 div.className="bottom";
 //.bottom_catalog
-var divCatalog=document.createElement("div");
+var divCatalog=dc("div");
 divCatalog.className="bottom_catalog clear";
 
-var divDg=document.createElement("div");
-var ulDg=document.createElement("ul");
+var divDg=dc("div");
+var ulDg=dc("ul");
 
-var divZn=document.createElement("div");
-var ulZn=document.createElement("ul");
+var divZn=dc("div");
+var ulZn=dc("ul");
 
-var divAbout=document.createElement("div");
-var ulAbout=document.createElement("ul");
+var divAbout=dc("div");
+var ulAbout=dc("ul");
 
-var divContact=document.createElement("div");
-var ulContact=document.createElement("ul");
+var divContact=dc("div");
+var ulContact=dc("ul");
 
 divDg.className="divDg";
 divZn.className="divDg";
@@ -110,7 +110,7 @@ contactSettings.forEach(function(item){
 divCatalog.appendChild(divContact);
 
 //热门城市
-var pCity=document.createElement("p");
+var pCity=dc("p");
 pCity.appendChild(document.createTextNode("热门城市："));
 pCity.className="city";
 var hotCitySettings=[
@@ -171,7 +171,7 @@ hotCitySettings.forEach(function(item){
 pCity.appendChild(getA("更多城市",""));
 
 //其他链接
-var pOther=document.createElement("p");
+var pOther=dc("p");
 pOther.className="other";
 var otherSettings=[
 	{name:"车险信息网",href:""},
@@ -199,7 +199,7 @@ otherSettings.forEach(function(item){
 
 //版权
 var copy="Copyright © 2016 SouChe All Rights Reserved 杭州大搜车汽车服务有限公司 版权所有 京 ICP备 13012136号 京公网安备 11010802013095号";
-var pCopy=document.createElement("p");
+var pCopy=dc("p");
 pCopy.appendChild(document.createTextNode(copy));
 pCopy.className="copy";
 
@@ -211,20 +211,3 @@ divBg.appendChild(div);
 //添加到页面上
 document.body.appendChild(divBg);
 
-function getA(name,href){
-	var a=document.createElement("a");
-	a.appendChild(document.createTextNode(name));
-	a.href=href;
-	return a;
-}
-function getSpan(name,className){
-	var span=document.createElement("span");
-	span.appendChild(document.createTextNode(name));
-	span.className=className;
-	return span;
-}
-function createAnchor(content){
-	var li=document.createElement("li");
-	li.appendChild(content);
-	return li;
-}

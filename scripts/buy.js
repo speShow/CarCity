@@ -1,6 +1,6 @@
 // JavaScript Document
 
-var h3=document.createElement("h3");
+var h3=dc("h3");
 var historyRecordResult=34630;
 h3.innerHTML=["共找到",historyRecordResult,"辆车"].join("");
 document.getElementById("historyRecord").appendChild(h3);
@@ -143,15 +143,15 @@ var filterSetting=[
 ];
 
 function createSelect(option){
-	var container=document.createElement("div"),
-		title=document.createElement("h3"),
-		select=document.createElement("div"),
-		placeholder=document.createElement("span"),
-		icon=document.createElement("i"),
+	var container=dc("div"),
+		title=dc("h3"),
+		select=dc("div"),
+		placeholder=dc("span"),
+		icon=dc("i"),
 		ul=function(){
-			var ul=document.createElement("ul");
+			var ul=dc("ul");
 			option.options.forEach(function(item){
-				var li=document.createElement("li");
+				var li=dc("li");
 				li.innerText=item.name;
 				li.onclick=function(){
 					renderCars(carData.filter(function(_item){
@@ -161,7 +161,7 @@ function createSelect(option){
 				};
 				ul.appendChild(li);
 			});
-			var _default=document.createElement("li");
+			var _default=dc("li");
 			_default.innerText="不限";
 			_default.onclick=function(){
 				renderCars(carData);
@@ -204,7 +204,7 @@ filterSetting.forEach(function(item,index){
 document.getElementById("condition").appendChild(filterFragment);
 
 function createBox(option){
-	var box=document.createElement("div");
+	var box=dc("div");
 	box.className="box";
 	box.style.backgroundImage="url("+option.url+")";
 	box.innerHTML=[
