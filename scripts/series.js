@@ -1,6 +1,17 @@
 var carData=[
 	{
 		title:"A",
+		// brands:[
+		// 	{
+				
+		// 	}
+		// ]
+		// brandName:{name:"阿尔法罗密欧"，href:""},
+		// brandType:[
+		// 	{name:"ALFA156",href:""},
+		// 	{name:"ALFA166",href:""},
+		// 	{name:"ALFA GT",href:""}
+		// ]
 		brands:[
 			{name:"阿尔法罗密欧",href:""},
 			{name:"阿斯顿·马丁",href:""},
@@ -286,7 +297,7 @@ carData.forEach(function(item){
 	cont.appendChild(bcDiv);
 	brandFragment.appendChild(cont);
 });
-document.getElementById("brand-wrap").appendChild(brandFragment);
+document.getElementById("set-wrap").appendChild(brandFragment);
 
 function createCars(item){
 	var div=getDiv("car-item clear");

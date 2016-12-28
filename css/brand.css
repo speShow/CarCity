@@ -1,5 +1,5 @@
-.brand-item{margin-bottom: 20px;}
-.brand-title{
+.car-item{margin-bottom: 20px;}
+.car-letter{
 	float: left;
 	width: 50px;
 	height: 30px;
@@ -10,13 +10,21 @@
 	color: #666;
 	border: 1px solid #999;
 }
-.brand-content{
+.car-content{
 	float: left;
 	margin-left: 30px;
 	width: 1000px;
 }
-.brand-content a{
+.car-content a{
 	margin-right: 18px;
 	line-height: 30px;
 	font-size: 14px;
 }
+.car-content a.car-title{
+	float: left;
+	margin-right: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.car-content .car-type{}
