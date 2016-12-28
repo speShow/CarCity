@@ -25,3 +25,10 @@ body{padding-top:80px;}
 .icon{background:url(../images/icon.png);}
 .icon2{background:url(../images/icon2.png);}
 em,i{font-style:normal;}
+.main h1{
+	margin: 30px 0 40px;
+	font-size: 20px;
+	color: #333;
+}
+.main a{color: #666;}
+.main a:hover{color: #ff571a;}

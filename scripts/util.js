@@ -25,24 +25,33 @@ Array.prototype.forEach = [].forEach || function(callback){
 		callback(this[a], a++, this);
 	}
 };
-
+//创建标签
 function dc(tagName){
 	return document.createElement(tagName);
 }
+//创建 <a>
 function getA(name,href){
 	var a=dc("a");
 	a.appendChild(document.createTextNode(name));
 	a.href=href;
 	return a;
 }
+//创建 <span>
 function getSpan(name,className){
 	var span=dc("span");
 	span.appendChild(document.createTextNode(name));
 	span.className=className;
 	return span;
 }
+//创建 <li>
 function createAnchor(content){
 	var li=dc("li");
 	li.appendChild(content);
 	return li;
+}
+//创建 <div>
+function getDiv(className){
+	var div=dc("div");
+	div.className=className;
+	return div;
 }

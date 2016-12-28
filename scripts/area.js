@@ -238,7 +238,6 @@ var cityData=[
 		]
 	}
 ];
-
 var cityFragment=document.createDocumentFragment();
 cityData.forEach(function(item,index){
 	var cont=createCity(item,index);
@@ -251,8 +250,7 @@ document.getElementById("city-wrap").appendChild(cityFragment);
 
 // 创建class=city-item的div，并将h3标签放入div
 function createCity(item,index){
-	var div=dc("div");
-	div.className="city-item";
+	var div=getDiv("city-item");
 	div.appendChild(getH3(item,index));
 	return div;
 }
@@ -261,20 +259,4 @@ function getH3(item,index){
 	var h3=dc("h3");
 	h3.appendChild([document.createTextNode(item.province.name),getA(item.province.name,item.province.href)][+(index!==0)]);
 	return h3;
-}
-
-/*
-	创建包含h3的div
-	@ele 元素名
-	@item 对象，包含province和city
-	@index item的index
- */
-function getEle(item,index){
-	// h3
-	var ele=dc("h3");
-	ele.appendChild([document.createTextNode(item.province.name),getA(item.province.name,item.province.href)][+(index!==0)]);
-	// div
-	var div=dc("div");
-	div.className=["hot-city","city-item"][+(index!==0)];
-	div.appendChild(ele);
 }

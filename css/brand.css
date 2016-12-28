@@ -1,0 +1,22 @@
+.brand-item{margin-bottom: 20px;}
+.brand-title{
+	float: left;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666;
+	border: 1px solid #999;
+}
+.brand-content{
+	float: left;
+	margin-left: 30px;
+	width: 1000px;
+}
+.brand-content a{
+	margin-right: 18px;
+	line-height: 30px;
+	font-size: 14px;
+}
