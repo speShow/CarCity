@@ -20,11 +20,14 @@
 	line-height: 30px;
 	font-size: 14px;
 }
-.car-content a.car-title{
+.car-content a.car-name{
 	float: left;
 	margin-right: 30px;
 	line-height: 30px;
 	font-size: 16px;
 	font-weight: bold;
 }
-.car-content .car-type{}
+.car-content .car-type{
+	float: left;
+	line-height: 30px;
+}
